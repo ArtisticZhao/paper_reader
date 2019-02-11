@@ -5,8 +5,9 @@
 </head>
 <body>
     最近的参考消息列表：<br>
+    
     {% for key, value in paper_list.items %}
-        <a href="http://127.0.0.1:8000/get_one_page?url=http://www.jdqu.com{{value}}&title={{key}}">{{key}}</a>
+        <a href="{% url 'get_one_page' %}?url=http://www.jdqu.com{{value}}&title={{key}}">{{key}}</a>
         <br>
     {% endfor %}
 </body>
