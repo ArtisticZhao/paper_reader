@@ -5,7 +5,7 @@ from lxml import html
 
 def open_url(url):
     print('accessing ' + url + ' ...')
-    req = requests.get(url, timeout=10)
+    req = requests.get(url)
     if req.status_code == 200:
         req.encoding = 'GBK'
         return req.text
