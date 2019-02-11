@@ -7,7 +7,7 @@
     最近的参考消息列表：<br>
     
     {% for key, value in paper_list.items %}
-        <a href="{% url 'get_one_page' %}?url=http://www.jdqu.com{{value}}&title={{key}}">{{key}}</a>
+        <a href="{% url 'get_one_page' %}?url=http://www.jdqu.com{{value}}&title={{key}}"><font size="24" face="arial">{{key}}</font></a>
         <br>
     {% endfor %}
 </body>
