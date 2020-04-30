@@ -4,4 +4,4 @@
 通过爬虫, 爬取这些网站的报纸图片链接, 并重新生成一个干净, 连续的页面, 供老人阅读
 
 ## 需求
-Django, request
+Django, request, lxml
